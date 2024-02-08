@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Image Upload</h1>
+
+    <form action="/process_image" method="post" enctype="multipart/form-data">
+        <input type="file" name="x_file" multiple required>
+        <input type="submit">
+    </form>
+    
+    <h1>Image Select</h1>
+    <form action="/select" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" multiple required>
+        <input type="submit">
+    </form>
+
+</body>
+</html>

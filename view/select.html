@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Selected Images</h1>
+    {% for image_info in selected_images %}
+        <div>
+            <h2>{{ image_info.name }}</h2>
+            <img src="{{ image_info.path }}" alt="Selected Image">
+        </div>
+    {% endfor %}
+</body>
+</html>
